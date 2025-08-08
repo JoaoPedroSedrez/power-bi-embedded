@@ -72,8 +72,6 @@ Anote os seguintes valores da aplicação:
 powerbi-embedded/
 ├── index.html          # Interface web para exibir o relatório
 ├── generate_token.py   # Script Python para gerar tokens de embed
-├── requirements.txt    # Dependências Python
-├── .env               # Variáveis de ambiente (não versionar!)
 └── README.md          # Este arquivo
 ```
 
@@ -85,37 +83,8 @@ Script Python responsável por:
 - Gerar embed token específico para o relatório
 - Exibir o token no console para uso no HTML
 
-## 🔑 Variáveis de Ambiente
 
-Crie um arquivo `.env` na raiz do projeto:
 
-```env
-# Azure AD Application
-AZURE_CLIENT_ID=seu_application_client_id
-AZURE_CLIENT_SECRET=seu_client_secret
-AZURE_TENANT_ID=seu_directory_tenant_id
-
-# Power BI
-POWERBI_WORKSPACE_ID=seu_workspace_id
-POWERBI_REPORT_ID=seu_report_id
-```
-
-## 🐍 Configuração do Ambiente Python
-
-### Instalação das Dependências
-
-Crie um arquivo `requirements.txt`:
-
-```txt
-requests==2.31.0
-python-dotenv==1.0.0
-```
-
-Instale as dependências:
-
-```bash
-pip install -r requirements.txt
-```
 
 ### Configuração do generate_token.py
 
